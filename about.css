@@ -1,0 +1,65 @@
+body {
+    background: rgb(204, 204, 204);
+    background: linear-gradient(167deg, rgb(221, 220, 220) 18%, rgb(199, 199, 199) 72%);
+    background-repeat: repeat-x;
+
+    animation: fadeInAnimation ease 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+        margin-top: -15px;
+    }
+    100% {
+        opacity: 1;
+        margin-top: 0px;
+     }
+}
+
+.nav-wrapper {
+    background: rgb(50, 50, 50);
+    background: linear-gradient(167deg, rgb(44, 44, 44) 18%, rgb(37, 37, 37) 72%);
+}
+
+
+
+.two-column-wrapper {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-left: 100px;
+    padding-top: 100px;
+    padding-bottom: 200px;
+}
+
+
+.text-content-wrapper  {
+    padding: 30px;
+    margin-left: 10px;
+}
+
+.text-content-wrapper h1 {
+    background-image: linear-gradient(170deg, rgb(43, 194, 149) 0%, rgb(48, 48, 48) 72%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+    font-weight: 900;
+    font-size: 2.5rem;
+    margin-bottom: -5px;
+}
+
+.text-content-wrapper p {
+    background-image: linear-gradient(160deg, rgb(88, 26, 112) 12%, rgb(58, 8, 24) 72%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+    font-size: 1.25rem;
+    font-weight: 700;
+}
